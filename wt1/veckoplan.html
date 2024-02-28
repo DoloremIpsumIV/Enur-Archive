@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webbteknik 1 - Veckoplan</title>
+    <meta name="Keywords" content="webbutveckling, webbdesign, webbteknik, html, css">
+    <meta name="Description" content="Webbplats för en introduktionskurs i webbutveckling">
+    <meta name="Author" content="Rune Körnefors">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <link rel="stylesheet" href="css/style-print.css" media="print">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <label for="menucheckbox" id="menuicon"></label>
+    <input type="checkbox" id="menucheckbox">
+    <nav id="globnav">
+        <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="om/kursen.html">Om kursen</a></li>
+            <li><a href="veckoplan.html" class="thisSection">Veckoplan</a></li>
+            <li><a href="forel/f1.html">Föreläsningar</a></li>
+            <li><a href="lab/lab1a.html">Laborationer</a></li>
+            <li><a href="uppg/u1.html">Uppgifter</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Webbteknik 1</h1>
+        <h2>Veckoplan</h2>
+    </header>
+    <aside id="aside-top">
+
+    </aside>
+    <main>
+        <p>Kursens består av tre block om tre-fyra veckor vardera. Varje vecka består av ett antal föreläsningar, laborationer, läsanvisningar och en del av blockets uppgift. Du bör gå igenom det i den ordning som det anges i nedanstående lista. Varje vecka börjar du med en föreläsning och därefter motsvarande laboration. Samtidigt läser du anvisade delar i kursböckerna. Då du gått igenom hela veckans föreläsningar och laborationer, gör du en del utav uppgiften.</p>
+        <p>I läsanvisningarna är <i>LWB = Learning Web Design</i> och <i>EUE = Elements of User Experience</i>. Siffrorna är kapitel och om inget annat anges inom parentes, är det hela kapitlet som ska läsas. Samma kapitel kan också komma igen flera gånger.</p>
+        <input type="checkbox" id="toggleShortdescr">
+        <label for="toggleShortdescr">Visa/dölj kort beskrivning</label>
+        <section>
+            <h3>Grunderna</h3>
+            <ul class="weeklist">
+                <li><span class="weeknr">Vecka 35</span><span class="shortdescr"> - Introduktion</span>
+                    <ul>
+                        <li><a href="forel/f1.html">F1a</a> - <a href="lab/lab1a.html">L1a</a> - <span class="readings">LWB 1, LWB 20 (s.581-588)</span>
+                            <ul class="shortdescr">
+                                <li>F1a: Introduktion - Webbteknik (webbdesign), språk för webben.</li>
+                                <li>L1a: Verktyg och organisation - Installation av program, skaffa konton.</li>
+                            </ul>
+                        </li>
+                        <li><a href="forel/f1.html#b">F1b</a> - <a href="lab/lab1b.html">L1b</a> - <span class="readings">LWB 2</span>
+                            <ul class="shortdescr">
+                                <li>F1b: Datorer, Internet, World Wide Web - Historik och bakgrund till datorer och nätverk.</li>
+                                <li>L1b: Komma igång med verktygen - Introducerande övningar för att se vad man gör med de olika verktygen.</li>
+                            </ul>
+                        </li>
+                        <li><a href="forel/f1.html#c">F1c</a> - <a href="lab/lab1c.html">L1c</a> - <span class="readings">LWB 2</span>
+                            <ul class="shortdescr">
+                                <li>F1c-1: Datakommunikation - Klient-server, domän, protokoll.</li>
+                                <li>F1c-2: Webbadresser - Filtyper, url, relativa adresser.</li>
+                                <li>L1c: Mappar, filer och adresser - Organisation, relativa adresser.</li>
+                            </ul>
+                        </li>
+                        <li><a href="forel/f1.html#d">F1d</a> - - - <span class="readings">LWB 3, EUE 1</span>
+                            <ul class="shortdescr">
+                                <li>F1d: Några begrepp (koncept) - Användarcentrerad design, informationsarkitektur, användarupplevelse, tillgänglighet, terminologi.</li>
+                                <li>Det finns ingen L1d.</li>
+                            </ul>
+                        </li>
+                        <li><a href="uppg/u1.html">U1</a><span class="lessimportant"> - påbörja uppgiften</span>
+                            <ul class="shortdescr">
+                                <li>Organisation av mappar och filer för uppgiftens webbsidor. Skapa en privat repository på GitHub och koppla den till mappen för uppgiften på din dator samt publicering på Netlify. Besvara första frågan, som ska finnas med på webbsidorna.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><span class="weeknr">Vecka 36</span><span class="shortdescr"> - Strukturering</span>
+                    <ul>
+                        <li><a href="forel/f2.html">F2a</a> - <a href="lab/lab2a.html">L2a</a> - <span class="readings">LWB 4</span>
+                            <ul class="shortdescr">
+                                <li>F2a: Introduktion till HTML - Element, tagg, attribut, metadata, struktur.</li>
+                                <li>L2a: Strukturering med HTML - Introducerande övningar till HTML, arbeta med Visual Studio Code.</li>
+                            </ul>
+                        </li>
+                        <li><a href="forel/f2.html#b">F2b</a> - <a href="lab/lab2b.html">L2b</a> - <span class="readings">LWB 4</span>
+                            <ul class="shortdescr">
+                                <li>F2b: Bakgrund och standard - HyperText, WWW, W3C, WHATWG, validering, kodens stil.</li>
+                                <li>L2b: Att följa en standard - Kontrollera koden i en validator, hitta och rätta fel.</li>
+                            </ul>
+                        </li>
+                        <li><a href="forel/f2.html#c">F2c</a> - <a href="lab/lab2c.html">L2c</a> - <span class="readings">LWB 5</span>
+                            <ul class="shortdescr">
+                                <li>F2c-1: Kodnig av data - Binära tal, bit, byt, kodning av data, UTF-8.</li>
+                                <li>F2c-2: Formatering av text - Element för text, fraselement, listor, block/inline, entiteter, element för gruppering och struktur.</li>
+                                <li>L2c: Formatering av text och strukturelement - Stil för text och listor, semantiska element för att strukturera sidans kod.</li>
+                            </ul>
+                        </li>
+                        <li><a href="forel/f2.html#d">F2d</a> - <a href="lab/lab2d.html">L2d</a> - <span class="readings">LWB 6, LWB 7 (s.131-138)</span>
+                            <ul class="shortdescr">
+                                <li>F2d: Länkar, bilder och adresser - Absolut och relativ adress, element för länkar och bilder.</li>
+                                <li>L2d: Länkar bilder och adresser - Struktur och stil för navigeringslänkar, adress till bilder, olika typer av länkar.</li>
+                            </ul>
+                        </li>
+                        <li><a href="uppg/u1.html">U1</a><span class="lessimportant"> - fortsätt med uppgiften</span>
+                            <ul class="shortdescr">
+                                <li>Skriva HTML-kod för sidorna. Besvara andra frågan.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><span class="weeknr">Vecka 37</span><span class="shortdescr"> - Stil</span>
+                    <ul>
+                        <li><a href="forel/f3.html">F3a</a> - <a href="lab/lab3a.html">L3a</a> - <span class="readings">LWB 11</span>
+                            <ul class="shortdescr">
+                                <li>F3a: Introduktion till CSS - Stilmall, regler, egenskaper, selektorer, kaskad, boxmodellen, nivåer av CSS, validering</li>
+                                <li>L3a: Stil med CSS - Grunderna i CSS, koppla ihop HTML och CSS, flexibilitet, webbläsarens verktyg för utvecklare, validering.</li>
+                            </ul>
+                        </li>
+                        <li><a href="forel/f3.html#b">F3b</a> - <a href="lab/lab3b.html">L3b</a> - <span class="readings">LWB 11-12</span>
+                            <ul class="shortdescr">
+                                <li>F3b: Stil för text samt selektering med id och class - Egenskaper för text och listor, id, class, enheter, specificering i selektorer</li>
+                                <li>L3b: Stil för text - Sätta stil på text och listor, selektering med id och class.</li>
+                            </ul>
+                        </li>
+                        <li><a href="forel/f3.html#c">F3c</a> - <a href="lab/lab3c.html">L3c</a> - <span class="readings">LWB 13</span>
+                            <ul class="shortdescr">
+                                <li>F3c: Färger och bakgrundsbild - RGB, färgsättning, bakgrundsbild, genomskinlig färg, gradient färg.</li>
+                                <li>L3c: Färger och bakgrund - Bakgrundsfärg, färg för text, bakgrundsbild.</li>
+                            </ul>
+                        </li>
+                        <li><a href="forel/f3.html#d">F3d</a> - <a href="lab/lab3d.html">L3d</a> - <span class="readings">LWB 13</span>
+                            <ul class="shortdescr">
+                                <li>F3d-1: Selektering och specificering - Selektering (val) av element, specificering och företräde.</li>
+                                <li>F3d-2: Pseudo-class och pseudo-element - Tillstånd, del av innehåll, status för länkar.</li>
+                                <li>L3d: Selektorer och stil för länkar - Stilsättning av navigeringslänkar och andra länkar, prioritering av stil, pseudo-class, pseudo-element.</li>
+                            </ul>
+                        </li>
+                        <li><a href="uppg/u1.html">U1</a><span class="lessimportant"> - avsluta uppgiften</span>
+                            <ul class="shortdescr">
+                                <li>Skriva CSS-kod för sidorna. Besvara tredje frågan. Testa publicerade webbsidor och skicka in redovisning.</li>
+                            </ul>
+                        </li>
+                        <li class="deadline">Deadline 1, sön. 17/9 kl. 23:59</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h3>Layout och responsiv webbdesign</h3>
+            <ul class="weeklist">
+                <li><span class="weeknr">Vecka 38</span><span class="shortdescr"> - Placering av element</span>
+                    <ul>
+                        <li><a href="forel/f4.html">F4a</a> - <a href="lab/lab4a.html">L4a</a> - <span class="readings">LWB 14</span>
+                            <ul class="shortdescr">
+                                <li>F4a: Boxmodellen - Egenskaper, storlek, marginaler, overflow, inline/block/inline-block, rundade hörn, skugga.</li>
+                                <li>L4a: Boxmodellen - Bredd, höjd, marginaler, kantlinjer, rundade hörn, skugga.</li>
+                            </ul>
+                        </li>
+                        <li><a href="forel/f4.html#b">F4b</a> - <a href="lab/lab4b.html">L4b</a> - <span class="readings">LWB 16 (s.447-484)</span>
+                            <ul class="shortdescr">
+                                <li>F4b-1: Layout - Allmänt om layout och olika tekniker.</li>
+                                <li>F4b-2: Layout med grid - Specifikation av egenskaper i grid.</li>
+                                <li>L4b: Layout med grid - Uppbyggnad av layout med grid.</li>
+                            </ul>
+                        </li>
+                        <li><a href="forel/f4.html#c">F4c</a> - <a href="lab/lab4c.html">L4c</a> - <span class="readings">LWB 17</span>
+                            <ul class="shortdescr">
+                                <li>F4c-1: Responsiv webbdesign - Responsiv/adaptiv webbdesign, desktop first, mobile first, media query.</li>
+                                <li>F4c-2: Responsiv webbdesign - Exempel med grid.</li>
+                                <li>L4c: Responsiv webbdesign - Två olika sätt, desktop-first och mobile-first.</li>
+                            </ul>
+                        </li>
+                        <li><a href="uppg/u2.html">U2</a><span class="lessimportant"> - påbörja uppgiften</span>
+                            <ul class="shortdescr">
+                                <li>Strukturera upp sidorna för webbplatsen. Skapa en privat repository på GitHub och koppla den till mappen för uppgiften på din dator samt publicering på Netlify. Besvara första frågan som ska finnas med.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><span class="weeknr">Vecka 39</span><span class="shortdescr"> - Layout</span>
+                    <ul>
+                        <li><a href="forel/f5.html">F5a</a> - <a href="lab/lab5a.html">L5a</a> - <span class="readings">LWB 16 (s.419-446)</span>
+                            <ul class="shortdescr">
+                                <li>F5a: Flexbox - Egenskaper för flexibel placering och storlek med flex.</li>
+                                <li>L5a: Flexbox - Kolumner eller rader, krympa och växa, ordning.</li>
+                            </ul>
+                        </li>
+                        <li><a href="forel/f5.html#b">F5b</a> - <a href="lab/lab5b.html">L5b</a> - <span class="readings">LWB 15 (s.387-398, kursivt 399-404)</span>
+                            <ul class="shortdescr">
+                                <li>F5b: Flytande element - Olika värden för float och clear</li>
+                                <li>L5b: Flytande element - Float, clear</li>
+                            </ul>
+                        </li>
+                        <li><a href="forel/f5.html#c">F5c</a> - <a href="lab/lab5c.html">L5c</a> - <span class="readings">LWB 15 (s.405-418)</span>
+                            <ul class="shortdescr">
+                                <li>F5c: Positionering - Egenskaperna position och z-index.</li>
+                                <li>L5c: Positionering - Olika varianter för egenskapen position.</li>
+                            </ul>
+                        </li>
+                        <li><a href="forel/f5.html#d">F5d</a> - <a href="lab/lab5d.html">L5d</a> - <span class="readings">EUE 6 (s.118-131), LWB 17 (s.504-505)</span>
+                            <ul class="shortdescr">
+                                <li>F5d: Navigering - Olika typer av navigering, HTML-struktur för länkar i navigering.</li>
+                                <li>L5d: Navigering med flex - Användning av flex för utformning av global och lokal navigering på olika sätt.</li>
+                            </ul>
+                        </li>
+                        <li><a href="uppg/u2.html">U2</a><span class="lessimportant"> - fortsätt med uppgiften</span>
+                            <ul class="shortdescr">
+                                <li>Responsiv design med CSS-kod för sidornas layout. Besvara andra frågan i uppgiften.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><span class="weeknr">Vecka 40</span><span class="shortdescr"> - Designmodell och kravspecifikation</span>
+                    <ul>
+                        <li><a href="forel/f6.html">F6a</a> - <a href="lab/lab6a.html">L6a</a> - <span class="readings">LWB 18 (s.517-533, resten översiktligt)</span>
+                            <ul class="shortdescr">
+                                <li>F6a: Visuella effekter - Egenskaperna transiton och transform.</li>
+                                <li>L6a: Visuella effekter - Experiment med transition och transform.</li>
+                            </ul>
+                        </li>
+                        <li><a href="forel/f6.html#b">F6b</a> - - - <span class="readings">EUE 2-3</span>
+                            <ul class="shortdescr">
+                                <li>F6b: Designmodell, målgruppsanalys - Garretts designmodell, strategy plane, målgruppsanalys.</li>
+                                <li>Det finns ingen L6b.</li>
+                            </ul>
+                        </li>
+                        <li><a href="forel/f6.html#c">F6c</a> - <a href="lab/lab6c.html">L6c</a> - <span class="readings">EUE 4</span>
+                            <ul class="shortdescr">
+                                <li>F6c: Designmodell, kravspecifikation - scope plane, kriterier för krav.</li>
+                                <li>L6c: Kravspecifikation - Övning i att skriva krav i en kravspecifikation.</li>
+                            </ul>
+                        </li>
+                        <li><a href="uppg/u2.html">U2</a><span class="lessimportant"> - avsluta uppgiften</span>
+                            <ul class="shortdescr">
+                                <li>Slutför webbsidorna med några visuella effekter. Besvara tredje frågan. Testa publicerade webbsidor och skicka in redovisning.</li>
+                            </ul>
+                        </li>
+                        <li class="deadline">Deadline 2, sön. 8/10 kl. 23:59</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h3>Lite av varje och avslutning</h3>
+            <ul class="weeklist">
+                <li><span class="weeknr">Vecka 41</span><span class="shortdescr"> - Tabeller, designmodell, struktur, navigering, interaktion och formulär</span>
+                    <ul>
+                        <li><a href="forel/f7.html">F7a</a> - <a href="lab/lab7a.html">L7a</a> - <span class="readings">LWB 8, LWB 19 (s.551-553)</span>
+                            <ul class="shortdescr">
+                                <li>F7a: Tabeller - HTML-element för tabeller, tillgänglighet.</li>
+                                <li>L7a: Tabeller - HTML- och CSS-kod för tabeller.</li>
+                            </ul>
+                        </li>
+                        <li><a href="forel/f7.html#b">F7b</a> - - - <span class="readings">EUE 5-6</span>
+                            <ul class="shortdescr">
+                                <li>F7b: Designmodell, struktur och navigering - Structure plane, skeleton plane, organisation, struktur, navigering, lyout, prototyper.</li>
+                                <li>Det finns ingen L7b.</li>
+                            </ul>
+                        </li>
+                        <li><a href="forel/f7.html#c">F7c</a> - <a href="lab/lab7c.html">L7c</a> - <span class="readings">LWB 9, LWB 19 (s.547-550), EUE 6</span>
+                            <ul class="shortdescr">
+                                <li>F7c: Formulär - HTML-element för olika interaktionsobjekt i formulär.</li>
+                                <li>L7c: Formulär - HTML- och CSS-kod för formulär.</li>
+                            </ul>
+                        </li>
+                        <li><a href="forel/f7.html#d">F7d</a> - - - <span class="readings">EUE 5-6</span>
+                            <ul class="shortdescr">
+                                <li>F7d: Designmodell, Interaktion och gränssnitt - Structure plane, skeleton plane, interaktion, hantering av användarfel, analys av gränssnitt.</li>
+                                <li>Det finns ingen L7d.</li>
+                            </ul>
+                        </li>
+                        <li><a href="uppg/u3.html">U3</a><span class="lessimportant"> - påbörja uppgiften</span>
+                            <ul class="shortdescr">
+                                <li>Ta fram en plan för ditt arbete med U3 och arbeta sedan enligt den.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><span class="weeknr">Vecka 42</span><span class="shortdescr"> - Grafik, bildredigering, designmodell, grafisk profil</span>
+                    <ul>
+                        <li><a href="forel/f8.html">F8a</a> - <a href="lab/lab8a.html">L8a</a> - <span class="readings">LWB 23-24</span>
+                            <ul class="shortdescr">
+                                <li>F8a: Bilder på webben - Färger, olika egenskaper för bilder, komprimering, filformat.</li>
+                                <li>L8a: Bildredigering - Anpassning av bilder till webben i programmet Pixlr E.</li>
+                            </ul>
+                        </li>
+                        <li><a href="forel/f8.html#b">F8b</a> - <a href="lab/lab8b.html">L8b</a> - <span class="readings">LWB 7 (s.146-158), LWB 19 (s.556-559), LWB 23 (s.665-667)</span>
+                            <ul class="shortdescr">
+                                <li>F8b: Användning av olika bilder - Bilder i responsiv design, pixeltäthet, srcset, picture, CSS sprites.</li>
+                                <li>L8b: Bilder i responsiv design - Attributen srcset och sizes i img-taggen, elementen picture och source, CSS sprites.</li>
+                            </ul>
+                        </li>
+                        <li><a href="forel/f8.html#c">F8c</a> - - - <span class="readings">EUE 7-8</span>
+                            <ul class="shortdescr">
+                                <li>F8c: Designmodell, Webbplatsens ytskikt, Sammansättning - Surface plane, Designprinciper, färgpalett, grafisk profil, kontroll mot kravspecifikation.</li>
+                                <li>Det finns ingen L8c.</li>
+                            </ul>
+                        </li>
+                        <li><a href="uppg/u3.html">U3</a><span class="lessimportant"> - fortsätt med uppgiften</span>
+                            <ul class="shortdescr">
+                                <li>Följ din egen plan för arbetet med uppgiften.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><span class="weeknr">Vecka 43</span><span class="shortdescr"> - Inbäddad media, interaktivitet, utvärdering och testning</span>
+                    <ul>
+                        <li><a href="forel/f9.html">F9a</a> - <a href="lab/lab9a.html">L9a</a> - <span class="readings">LWB 10</span>
+                            <ul class="shortdescr">
+                                <li>F9a: Inbäddad media - Ta in bilder, ljud och video från extrena filer samt bädda in data från externa tjänster via ett iframe-element.</li>
+                                <li>L9a: Inbäddad media - Ljud, video, kartor och widget.</li>
+                            </ul>
+                        </li>
+                        <li><a href="forel/f9.html#b">F9b</a> - <a href="lab/lab9b.html">L9b</a> - <span class="readings">LWB 13 (s.317-318)</span>
+                            <ul class="shortdescr">
+                                <li>F9b: Interaktivitet - Olika former av interaktivitet som kan skapas endast med HTML och CSS, utan programmering i något annat språk.</li>
+                                <li>L9b: Interaktivitet med CSS - Pseudoklasser för att känna av användarens aktivitet, t.ex. peka och klicka samt förändring av någon stil, t.ex. visa eller dölja ett element.</li>
+                            </ul>
+                        </li>
+                        <li><a href="forel/f9.html#c">F9c</a> - - - <span class="readings">inga läsanvisningar</span>
+                            <ul class="shortdescr">
+                                <li>F9c: Utvärdering och testning - Olika former av utvärdering och testning, användartest, "tänka högt"-metoden.</li>
+                                <li>Det finns ingen L9c.</li>
+                            </ul>
+                        </li>
+                        <li><a href="forel/f9.html#d">F9d</a> - - - <span class="readings">inga läsanvisningar</span>
+                            <ul class="shortdescr">
+                                <li>F9d: Avslutning - Samband mellan områdena i kursen.</li>
+                                <li>Det finns ingen L9d.</li>
+                            </ul>
+                        </li>
+                        <li><a href="uppg/u3.html">U3</a><span class="lessimportant"> - fortsätt med uppgiften</span>
+                            <ul class="shortdescr">
+                                <li>Följ din egen plan för arbetet med uppgiften.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><span class="weeknr">Vecka 44</span><span class="shortdescr"> - Slutför uppgift U3</span>
+                    <ul>
+                        <li>- - - - <span class="readings">Inga fler föreläsningar eller laborationer</span></li>
+                        <li><a href="uppg/u3.html">U3</a><span class="lessimportant"> - avsluta uppgiften</span>
+                            <ul class="shortdescr">
+                                <li>Slutför webbplatsen. Testa publicerade webbsidor och skicka in redovisning.</li>
+                            </ul>
+                        </li>
+                        <li class="deadline">Deadline 3, sön. 5/11 kl. 23:59</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section class="courseended">
+            <h4>Kursperioden är slut</h4>
+            <ul class="weeklist">
+                <li><span class="weeknr">Vecka 45</span></li>
+                <li><span class="weeknr">Vecka 46</span></li>
+                <li><span class="weeknr">Vecka 47</span></li>
+                <li><span class="weeknr">Vecka 48</span>
+                    <ul>
+                        <li class="deadline">Deadline 4 (restuppgifter), sön. 3/12 kl. 23:59</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <aside id="aside-bottom">
+        <!--
+        <section>
+            <h4>Schema vt23</h4>
+            <ul>
+                <li><a href="https://cloud.timeedit.net/lnu/web/schema1/riq0Zy575Y6ZX7QZ595Z89WQ6q0Y57Q4l1609wYQQ6o3Q6lg9X65Wu8uvWPrudjXWuo3cun6Loa0r8anVWWxuZZZX7uupb%C3%A4%C3%A4KuWc5atxYYj1W2wWaXWWr06Y12WW19rW5cVXdU70ObQcX1c02505ZpawowoWxZq6Qo.html" target="_blank">Schema i TimeEdit</a></li>
+            </ul>
+            <p>Schemat i TimeEdit visar datum och tid för schemalagda tillfällen (kursintro och deadlines). Veckoplanen på denna sida ger en mer detaljerad beskrivning av kursens innehåll och upplägg.</p>
+        </section>
+        -->
+        <section>
+            <h4>Schema ht23</h4>
+            <ul>
+                <li><a href="https://cloud.timeedit.net/lnu/web/schema1/riq6lQ6Q6w7Z5ZQyQ81587X66QZ9307YlY638ZgQ10o2WYqXW9W86uWocVaunav1Ku%C3%A4WroYWc%C3%A4bWu6xZZZX7X81pwPuuacuudnSr2jmdc3nWaWwyexPdr0p1ZxXoomZ2yo5Qtaq6Qx.html" target="_blank">ID och WP Kalmar</a></li>
+                <li><a href="https://cloud.timeedit.net/lnu/web/schema1/riq6lQ6Q6w7Z5ZQyQ91587X66QZ9307YlY638ZgQ10o2WYqXW9W86uWocVaunav1Ku%C3%A4WroYWc%C3%A4bWu6xZZZX7X81pwPuuacuudnSr2jmdc3nWjWWWe0Pd8up1x0XLY0w2yZ55taPWcxoxjWmyt0aur5bXxoZ6Qq6Qo.html" target="_blank">ID och WP distans</a></li>
+                <li><a href="https://cloud.timeedit.net/lnu/web/schema1/riq02y5X3Y6ZX8QZ505Z299Q620Y671073Z01wYQQ6o8Y65gQ7l77b3KZZZX7uuacQnYlWau6pruVd966%C3%A4ornoW%C3%A41uvxuWjaqcWP8u1X2uWySpwm1xycrdWcZ5noo0ZadowQWXq6Q2.html" target="_blank">IMWT och FK Växjö</a></li>
+            </ul>
+            <p class="lessimportant">ID = Interaktionsdesigner,<br>WP = Webbprogrammerare,<br> IMWT = Interaktiva medier och webbteknologier,<br> FK = Fristående kurs<p>
+            <p>Schemat i TimeEdit visar datum och tid för schemalagda tillfällen. Veckoplanen på denna sida ger en mer detaljerad beskrivning av kursens innehåll och upplägg.</p>
+        </section>
+    </aside>
+    <footer>
+        <ul>
+            <li><b>&copy; </b>Rune Körnefors - <a href="om/webbplatsen.html">Om webbplatsen</a></li>
+            <li><b>Uppdaterad: </b><span id="lastUpdated">0000-00-00</span></li>
+        </ul>
+    </footer>
+</body>
+</html>

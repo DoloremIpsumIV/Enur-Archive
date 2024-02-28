@@ -1,0 +1,350 @@
+@charset "UTF-8";
+
+/* ----- Grundstil för webbsidan ----- */
+
+html, body {
+    height: 100%;
+}
+
+html, body, header, main, aside, footer, section, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----- Layout ----- */
+
+body {
+    background-color: #ebf0f1;
+    color: #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: min-content 100px auto min-content;
+    grid-template-areas:
+        "nav"
+        "header"
+        "main"
+        "footer";
+}
+
+header {
+    grid-area: header;
+    padding: 10px 20px;
+    border-bottom: 1px solid #999;
+    display: flex;
+    justify-content: space-between;
+}
+header h1 {
+    /*text-indent: -9999px;
+    margin: 0;
+    padding: 0;
+    line-height: 0;*/
+    position: absolute;
+    left: -9999px;
+}
+header h2 {
+    margin-top: auto;
+    margin-bottom: 0;
+    font-style: italic;
+    text-align: right;
+}
+header > * {
+    flex: 0 1 auto;
+}
+#logo {
+    height: 100%;
+}
+#runeimg {
+    width: 180px;
+    filter: drop-shadow(0px 0px 15px #666);
+    border-radius: 40%;
+}
+
+main {
+    grid-area: main;
+    padding: 20px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #222;
+    color: #999;
+    padding: 20px;
+}
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 2em;
+}
+
+/* ----- Utformning av navigeringen ----- */
+
+nav {
+    grid-area: nav;
+    background-color: #222;
+    color: #CCC;
+    padding: 8px 20px;
+}
+
+#menuicon,
+#menucheckbox { /* "knapp" fÃ¶r global navigering i mobilformat */
+    display: none;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+nav li {
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    color: #CCC;
+    text-decoration: none;
+    padding: 8px;
+}
+nav a:hover {
+    background-color: #7092af;
+    transition: background-color 0.5s;
+}
+nav a.thisPage {
+    background-color: #3a7fbb;
+}
+
+/* ------ main uppdelat i tvÃ¥ kolumner ----- */
+
+main.twoCols {
+    display: grid;
+    grid-template-columns: minmax(auto,90ch) auto;
+    gap: 2em;
+}
+main.twoCols aside {
+    padding-top: 8rem;
+}
+
+/* ------ Ã–vrig stil fÃ¶r innehÃ¥llet ----- */
+
+p {
+    max-width: 90ch;
+}
+img {
+    max-width: 100%;
+}
+b {
+    font-weight: bold;
+}
+i {
+    font-style: italic;
+    color: #6c5817;
+}
+em {
+    font-style: italic;
+    color: #e46e33;
+}
+strong {
+    font-weight: bold;
+    color: #e46e33;
+}
+pre {
+    margin: 0;
+    font-size: 0.9em;
+    font-style: italic;
+    color: #c78b0a;
+    white-space: pre-wrap;
+}
+code {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: #c78b0a;
+}
+
+a  {
+    color: #000;
+}
+a:link,
+a:visited {
+    background-color: unset;
+}
+a:hover,
+a:active {
+    background-color: #999;
+}
+a[target=_blank]::after {
+    content: url(../img/newwindow.gif);
+}
+a.zip,
+a.pdf {
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 3.5em;
+    line-height: 3em;
+    vertical-align: middle;
+    display: inline-block;
+}
+a.zip {
+    background-image: url(../img/zip.png);
+}
+a.pdf {
+    background-image: url(../img/pdf.png);
+}
+
+.obs {
+    background-image: url(../img/obs.png);
+    background-repeat: no-repeat;
+    padding-left: 70px;
+}
+
+.img-in-text {
+    height: 2em;
+    vertical-align: middle;
+}
+
+.fade {
+    opacity: 0.7;
+}
+
+.description {
+    max-width: 80ch;
+    font-size: 1.1em;
+    font-style: italic;
+    margin-top: 0;
+}
+.description::first-letter {
+    font-size: 1.6em;
+}
+
+.boxlinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    cursor: pointer;
+    margin-bottom: 1em;
+}
+.boxlinks a {
+    flex: 0 1 300px;
+    background-color: #b2cddb;
+    border: 8px outset #3a7fbb;
+    padding: 0.5em;
+    text-decoration: none;
+    transition: background-color 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.boxlinks a:hover {
+    background-color: #86c4e8;
+    transform: scale(1.02);
+}
+.boxlinks h3 {
+    margin: 0;
+}
+.boxlinks img {
+    max-width: 180px;
+    display: block;
+    margin: 0 auto;
+}
+
+#linksections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+#linksections > section {
+    background-color: #c4e0e0;
+    flex: 1 1 400px;
+    border: 2px dotted #999;
+    padding: 0.5em;
+    transition: background-color 1s;
+}
+#linksections > section:hover {
+    background-color: #f9fbfb;
+}
+#linksections h3 {
+    margin: 0;
+}
+
+/* ----- Teckentabell ----- */
+
+#charTable {
+    border-collapse: collapse;
+    font-size: 80%;
+}
+#charTable tr:nth-of-type(even) {
+    background-color: #e1e1e1;
+}
+#charTable tr:first-of-type {
+    background-color: #7eb6e8;
+}
+#charTable tr:hover {
+    background-color: #b3d4f1;
+}
+#charTable th,
+#charTable td {
+    border: 1px solid #999;
+    padding: 4px;
+    vertical-align: top;
+    text-align: left;
+}
+#charTable td:first-of-type {
+    font-size: 1rem;
+}
+
+/* ------ Media queries ----- */
+
+@media screen and (max-width: 1180px) {
+    #runeimg {
+        width: 100px;
+        filter: drop-shadow(0px 0px 10px #666);
+    }
+}
+
+@media screen and (max-width: 670px) {
+    #charTable {
+        width: 100%;
+    }
+    #charTable tr {
+        display: block;
+    }
+    #charTable th {
+        display: block;
+        border: none;
+    }
+    #charTable td {
+        display: list-item;
+        list-style: disc;
+        margin-left: 2em;
+        padding: 2px;
+        border: none;
+    }
+    #charTable td:first-of-type {
+        font-weight: bold;
+        list-style: none;
+        margin-left: 0.5em;
+    }
+    
+}
+
+@media screen and (max-width: 640px) {
+    main.twoCols {
+        grid-template-columns: auto;
+        grid-template-areas:
+            "main-aside"
+            "main-article";
+    }
+    main.twoCols article {
+        grid-area: main-article;
+    }
+    main.twoCols aside {
+        grid-area: main-aside;
+        padding-top: 0;
+    }
+}

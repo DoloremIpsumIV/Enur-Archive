@@ -1,0 +1,401 @@
+@charset "UTF-8";
+
+/* ----- Grundstil för webbsidan ----- */
+
+html {
+    font-size: 10px; /* "base font" */
+}
+
+html, body {
+    height: 100%; /* Ser till att sidfoten trycks ner på sidor med lite innehåll */
+}
+
+html, body, nav, header, main, aside, footer, article, section, div, iframe {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----- Layout ----- */
+
+body {
+    background-color: #FFF;
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header  header"
+        "main    a-top"
+        "main    a-bottom"
+        "main    ."
+        "footer  footer";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-style: italic;
+    margin: 0;
+    padding: 0.2rem 0;
+}
+h4,
+h5 {
+    font-style: normal;
+    font-size: 1em;
+}
+h4 + p,
+h5 + p,
+h4 + ul,
+h5 + ul { /* p- eller ul-element som ligger direkt efter h4 eller h5 */
+    margin-top: 0;
+}
+
+header {
+    grid-area: header;
+    padding-top: 0.5em;
+    border-bottom: 1px solid #CCCCCC;
+    color: #000000;
+}
+header h1 {
+    color: #930;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 3em;
+    text-shadow: 0.1em 0.1em 0.2em #F60;
+}
+
+main {
+    grid-area: main;
+}
+main h2 {
+    background-image: linear-gradient(to right,#666666,#FFF);
+    background-size: 50% 1px;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+}
+main section h3 {
+    background-image: linear-gradient(to right,#f4e9a4,#FFF);
+    background-size: 90% 100%;
+    background-position: top left;
+    background-repeat: no-repeat;
+    padding: 0.2rem;
+}
+
+aside#aside-top {
+    grid-area: a-top;
+}
+aside#aside-bottom {
+    grid-area: a-bottom;
+    padding-top: 1rem;
+}
+aside section {
+    margin: 1.3em;
+    padding: 0.4em;
+    border: 1px solid #333;
+    box-shadow: 0.1em 0.1em 1em #999;
+    border-radius: 6px;
+    color: #000;
+    font-size: 0.85em;
+}
+aside h3,
+aside h4,
+aside h5 {
+   padding-left: 0;
+}
+
+footer {
+    grid-area: footer;
+    border-top: 1px solid #666;
+    margin-top: 1em;
+    padding: 0;
+    text-align: left;
+    font-size: 0.8em;
+}
+footer ul {
+    padding: 0;
+    list-style: none;
+}
+footer li {
+    padding: 0.2em;
+    color: #000;
+}
+footer a {
+    color: #000;
+    padding: 0 0.3em;
+}
+
+/* ----- Utformning av navigeringen ----- */
+
+#menuicon,
+#menucheckbox,
+nav { /* Dölj hela navigeringen */
+    display: none;
+}
+
+/* ------ Ã–vrig stil för innehållet ----- */
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    margin-left: 1.4em;
+    padding-left: 0;
+}
+
+b {
+    font-weight: bold;
+}
+i {
+    font-style: italic;
+    color: #6c5817;
+}
+em {
+    font-style: italic;
+    font-weight: bold;
+    color: #bc490f;
+}
+strong {
+    font-weight: bold;
+    color: #bc490f;
+}
+pre {
+    margin: 0;
+    font-size: 0.9em;
+    font-style: italic;
+    color: #b57f0b;
+    white-space: pre-wrap;
+}
+code {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: #b57f0b;
+}
+
+.menuCmd {
+    font-style: italic;
+    color: #bc490f;
+}
+.menuCmd span {
+    display: block;
+}
+.menuCmd span:nth-of-type(2) {
+    margin-left: 1em;
+}
+.menuCmd span:nth-of-type(3) {
+    margin-left: 2em;
+}
+.menuCmd span:nth-of-type(4) {
+    margin-left: 3em;
+}
+
+a  {
+    color: #000;
+}
+a.zip,
+a.pdf {
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 3.5em;
+    line-height: 3em;
+    vertical-align: middle;
+    display: inline-block;
+}
+a.zip {
+    background-image: url(../img/zip.png);
+}
+a.pdf {
+    background-image: url(../img/pdf.png);
+}
+
+.alignCenter {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.book img {
+    float: left;
+    margin: 0.5em 1em;
+    height: 100px;
+    box-shadow: 2px 2px 2px #666;
+}
+.book::after {
+    content: "";
+    display: block;
+    clear: both;
+    margin-bottom: 1em;
+}
+
+.videos div {
+    display: inline-block;
+    margin-right: 8px;
+}
+.video iframe { /* iframe för Youtube-filmer */
+    width: 304px;
+    height: 171px;
+    border: none;
+}
+.video p { /* Text under filmen */
+    margin: 0.2em 0 1em 0;
+    font-size: 0.8em;
+}
+
+.weeklist {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+.weeknr {
+    font-weight: bold;
+}
+
+.readings {
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.deadline {
+    color: #2f2f6a;
+    font-weight: bold;
+}
+
+.courseended {
+    border-top: 1px solid #999;
+    font-size: 0.8em;
+    font-style: italic;
+}
+.courseended h4 {
+    font-style: italic;
+    font-weight: normal;
+}
+
+.lessimportant,
+.tip {
+    font-size: 0.9em;
+    color: #666666;
+}
+
+.shortinfo {
+    font-size: 0.9em;
+    font-style: italic;
+    color: #666666;
+    margin-top: 0;
+    margin-left: 1em;
+}
+
+.obs {
+    background-image: url(../img/obs.png);
+    background-repeat: no-repeat;
+    padding-left: 70px;
+}
+
+#fragor li {
+    margin-bottom: 0.5em;
+}
+#fragor ol {
+    list-style-type: lower-alpha;
+}
+#fragor ol > li::marker {
+    font-weight: bold;
+}
+
+.shortdescr {
+    color: #2f6a50;
+    font-size: 0.8em;
+}
+#toggleShortdescr ~ section .shortdescr {
+    display: none;
+}
+#toggleShortdescr:checked ~ section .shortdescr {
+    display: inline;
+}
+#toggleShortdescr:checked ~ section .shortdescr * {
+    display: list-item;
+    margin-left: 2em;
+}
+
+.showHideBox label {
+    display: inline-block;
+    background-color: #f0d498;
+    color: #000000;
+    padding: 4px 8px;
+    border: 2px solid #523d0e;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px 2px #a78b50;
+    margin-bottom: 1em;
+}
+.showHideBox label:hover {
+    background-color: #c1a432;
+}
+.showHideBox label:active {
+    box-shadow: none;
+}
+.showHideBox div {
+    background-color: #faf9f5;
+    border: 2px dotted #999;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+}
+.toggleBox {
+    display: none;
+}
+.toggleBox + div {
+    display: none;
+}
+.toggleBox:checked + div {
+    display: block;
+}
+
+.courseBox {
+    position: relative;
+}
+.courseBox > span {
+    display: inline-block;
+    background-color: #dba13d;
+    width: fit-content;
+    padding: 0.8em;
+    margin: 0.5em;
+    box-shadow: 3px 3px 4px #999;
+}
+.courseBox > div {
+    position: absolute;
+    z-index: 10;
+    background-color: #f9f6e4;
+    border: 1px solid #757575;
+    top: 15px;
+    left: 30px;
+    padding: 0.3em;
+    font-size: 0.8em;
+    visibility: hidden;
+    
+}
+
+.fade {
+    opacity: 0.7;
+}
+
+#assignmentBoxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 0.8em;
+}
+#assignmentBoxes a {
+    flex-basis: 28%;
+    background-color: #ecdb93;
+    box-shadow: 0.1em 0.1em 1em #999;
+    border-radius: 10px;
+    padding: 0.5em;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+#assignmentBoxes ul {
+    padding: 0;
+    margin: 0;
+    margin-left: 1em;
+}

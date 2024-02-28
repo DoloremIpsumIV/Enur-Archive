@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>enur.se - Specialtecken</title>
+    <meta name="Keywords" content="webbutveckling, webbdesign, webbteknik, html, css, javascript">
+    <meta name="Description" content="Föreläsningar och laborationer i webbutveckling på klientsidan.">
+    <meta name="Author" content="Rune Körnefors">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <script src="js-script/script.js"></script>
+</head>
+
+<body>
+    <nav>
+        <label for="menucheckbox" id="menuicon"></label>
+        <input type="checkbox" id="menucheckbox">
+        <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="om.html">Om &amp; kontakt</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Rune Körnefors</h1>
+        <div>
+            <img src="img/header.png" alt="Bild med texten Rune Körnefors - enur.se" id="logo">
+        </div>
+        <h2>Specialtecken</h2>  
+    </header>
+    <main>
+        <p class="description">På tangentbordet finns det en hel del tecken förutom bokstäver och siffror. Många av dessa speciella tecken används i webbadresser och olika kodspråk (såsom HTML, CSS och JavaScript). Men jag har märkt att det är många som inte riktigt vet vad tecknen heter, så därför sammanställde jag denna tabell med de vanligaste tecknen.</p>
+        <p>Tangentkombinationerna i de två sista kolumnerna är för svenskt tangentbord, men för Windows kan det ändå skilja sig åt mellan olika tangentbord. Så kolla om tecknen är tryckta på tangenterna, annars får du prova dig fram.</p>
+        <table id="charTable">
+            <tr>
+                <th>Tecken</th>
+                <th>Svenska</th>
+                <th>Engelska</th>
+                <th>HTML-entitet</th>
+                <th>Unicode</th>
+                <th>Macintosh</th>
+                <th>Windows</th>
+            </tr>
+            <tr>
+                <td>#</td>
+                <td>Nummertecken<br>
+                    Stakettecken<br>
+                    Brädgård<br>
+                    Fyrkant</td>
+                <td>Hash<br>
+                    Number sign</td>
+                <td>&amp;num;</td>
+                <td>35</td>
+                <td>shift 3</td>
+                <td>shift 3</td>
+            </tr>
+            <tr>
+                <td>/</td>
+                <td>Snedstreck</td>
+                <td>Slash</td>
+                <td>&amp;sol;</td>
+                <td>47</td>
+                <td>shift 7</td>
+                <td>shift 7</td>
+            </tr>
+            <tr>
+                <td>\</td>
+                <td>Omvänt snedstreck<br>Bakstreck</td>
+                <td>Backslash</td>
+                <td>&amp;bsol;</td>
+                <td>92</td>
+                <td>shift alt 7</td>
+                <td>shift altGr 7</td>
+            </tr>
+            <tr>
+                <td>|</td>
+                <td>Lodrätt streck<br>Lodstreck<br>Vertikalstreck</td>
+                <td>Vertical bar</td>
+                <td>&amp;verbar;</td>
+                <td>124</td>
+                <td>alt 7</td>
+                <td>altGr 7</td>
+            </tr>
+            <tr>
+                <td>( )</td>
+                <td>Parentes<br>Rundparentes<br>Vanlig parentes</td>
+                <td>Parenthesis</td>
+                <td>&amp;lpar;<br>&amp;rpar;</td>
+                <td>40<br>41</td>
+                <td>shift 8<br>shift 9</td>
+                <td>shift 8<br>shift 9</td>
+            </tr>
+            <tr>
+                <td>[ ]</td>
+                <td>Hakparentes</td>
+                <td>Square bracket</td>
+                <td>&amp;lbrack;<br>&amp;rbrack;</td>
+                <td>91<br>93</td>
+                <td>alt 8<br>alt 9</td>
+                <td>altGr 8<br>altGr 9</td>
+            </tr>
+            <tr>
+                <td>{ }</td>
+                <td>Klammer<br>Spetsparentes</td>
+                <td>Curly bracket<br>Brace</td>
+                <td>&amp;lbrace;<br>&amp;rbrace;</td>
+                <td>123<br>125</td>
+                <td>shift alt 8<br>shift alt 9</td>
+                <td>shift altGr 8<br>shift altGr 9</td>
+            </tr>
+            <tr>
+                <td>&lt; &gt;</td>
+                <td>Vinkelparentes<br>Mindre än, större än</td>
+                <td>Pointing angle bracket<br>Less than, greater than</td>
+                <td>&amp;lt;<br>&amp;gt;</td>
+                <td>60<br>62</td>
+                <td>&lt;<br>shift &lt;</td>
+                <td>&lt;<br>shift &lt;</td>
+            </tr>
+            <tr>
+                <td>=</td>
+                <td>Likhetstecken</td>
+                <td>Equals sign</td>
+                <td>&amp;equals;</td>
+                <td>61</td>
+                <td>shift 0</td>
+                <td>shift 0</td>
+            </tr>
+            <tr>
+                <td>:</td>
+                <td>Kolon</td>
+                <td>Colon</td>
+                <td>&amp;colon;</td>
+                <td>58</td>
+                <td>shift .</td>
+                <td>shift .</td>
+            </tr>
+            <tr>
+                <td>;</td>
+                <td>Semikolon</td>
+                <td>Semicolon</td>
+                <td>&amp;semi;</td>
+                <td>59</td>
+                <td>shift ,</td>
+                <td>shift ,</td>
+            </tr>
+            <tr>
+                <td>&quot;</td>
+                <td>Citattecken<br>Citationstecken</td>
+                <td>Quotation mark<br>Double quotation mark</td>
+                <td>&amp;quot;</td>
+                <td>34</td>
+                <td>shift 2</td>
+                <td>shift 2</td>
+            </tr>
+            <tr>
+                <td>'</td>
+                <td>Apostrof<br>Enkelt citattecken</td>
+                <td>Apostrophe<br>Single quotation mark</td>
+                <td>&amp;apos;</td>
+                <td>39</td>
+                <td>'</td>
+                <td>'</td>
+            </tr>
+            <tr>
+                <td>`</td>
+                <td>Bakvänd apostrof<br>grave accent</td>
+                <td>Backtick</td>
+                <td>&amp;grave;</td>
+                <td>96</td>
+                <td>shift ´</td>
+                <td>alt ´ mellanslag</td>
+            </tr>
+            <tr>
+                <td>&amp;</td>
+                <td>Och-tecken<br>Et-tecken</td>
+                <td>Ampersand<br>And sign</td>
+                <td>&amp;amp;</td>
+                <td>38</td>
+                <td>shift 6</td>
+                <td>shift 6</td>
+            </tr>
+            <tr>
+                <td>!</td>
+                <td>Utropstecken</td>
+                <td>Exclamation mark</td>
+                <td>&amp;excl;</td>
+                <td>33</td>
+                <td>shift 1</td>
+                <td>shift 1</td>
+            </tr>
+            <tr>
+                <td>?</td>
+                <td>Frågetecken</td>
+                <td>Question mark</td>
+                <td>&amp;quest;</td>
+                <td>63</td>
+                <td>shift +</td>
+                <td>shift +</td>
+            </tr>
+            <tr>
+                <td>*</td>
+                <td>Asterisk<br>Stjärna</td>
+                <td>Asterisk<br>Star</td>
+                <td>&amp;ast;</td>
+                <td>42</td>
+                <td>shift '</td>
+                <td>shift '</td>
+            </tr>
+            <tr>
+                <td>~</td>
+                <td>Tilde</td>
+                <td>Tilde</td>
+                <td>&amp;tilde;</td>
+                <td>126</td>
+                <td>alt ¨ mellanslag</td>
+                <td>altGr ¨ mellanslag</td>
+            </tr>
+            <tr>
+                <td>^</td>
+                <td>Insättningstecken<br>Hatt</td>
+                <td>Caret<br>Hat</td>
+                <td>&amp;hat</td>
+                <td>94</td>
+                <td>shift ¨ mellanslag</td>
+                <td>shift ¨ mellanslag</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>Bindestreck</td>
+                <td>Hyphen</td>
+                <td>&amp;hyphen;</td>
+                <td>45</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>_</td>
+                <td>Understreck</td>
+                <td>Underscore<br>Underline</td>
+                <td>&amp;lowbar;</td>
+                <td>95</td>
+                <td>shift -</td>
+                <td>shift -</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>Blanksteg<br>Mellanslag</td>
+                <td>Space</td>
+                <td>&amp;#32;</td>
+                <td>32</td>
+                <td>mellanslag</td>
+                <td>mellanslag</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>Hårt blanksteg<br>Hårt mellanslag</td>
+                <td>Non-breaking space</td>
+                <td>&amp;#nbsp;</td>
+                <td>160</td>
+                <td>alt mellanslag</td>
+                <td>alt mellanslag</td>
+            </tr>
+            <tr>
+                <td>@</td>
+                <td>Snabel-a</td>
+                <td>At sign<br>Commercial at</td>
+                <td>&amp;commat;</td>
+                <td>64</td>
+                <td>alt 2</td>
+                <td>altGr 2</td>
+            </tr>
+            <tr>
+                <td>•</td>
+                <td>Listpunkt</td>
+                <td>Bullet<br>Bullet point</td>
+                <td>&amp;bullet;</td>
+                <td>8226</td>
+                <td>shift alt §</td>
+                <td>shift altGr §</td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        <ul>
+            <li>&copy; 2022-2023 Rune Körnefors</li>
+            <li>Uppdaterad: <span id="lastUpdated">0000-00-00</span></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
